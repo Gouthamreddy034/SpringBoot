@@ -23,7 +23,7 @@ public class AssesmentServiceImpl implements AssesmentService{
     public Assesment findById(Integer id) {
         return assesmentDao
                 .findById(id)
-                .orElseThrow(() -> new MyException("Employee not exist with id :" + id));
+                .orElseThrow(() -> new MyException("Employee not exist with Id :" + id));
     }
 
     @Override
